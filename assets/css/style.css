@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000 !important;
+  color: #fff !important;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.greeting {
+  color: #fff !important;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #c32257 !important;
+  text-shadow: 0 0 12px #a73f7a, 0 0 24px #4b0b38;
+}
+
+.highlight {
+  color: #fff;
+  font-size: 26px;
+}
+
+.hero-description {
+  font-size: 16px;
+  color: #b3b3b3 !important;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  padding: 14px 32px !important;
+  font-size: 16px !important;
+  border-radius: 4px !important;
+  transition: all 0.3s;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+.hero-buttons .btn-primary {
+  background-color: #c32257 !important;
+  border: 2px solid #c32257 !important;
+  color: #fff !important;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #f4aebd !important;
+  border-color: #f4aebd !important;
+  color: #000000 !important;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: transparent !important;
+  color: #c32257 !important;
+  border: 2px solid #c32257 !important;
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: #f4aebd !important;
+  border-color: #f4aebd !important;
+  color: #000000 !important;
+}
+
+.hero-image {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  
+}

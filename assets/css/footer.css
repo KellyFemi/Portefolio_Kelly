@@ -1,0 +1,14 @@
+
+/* Footer */
+.main-footer {
+  padding: 20px 0;
+  border-top: 1px solid #333333;
+  margin-top: 60px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-footer p {
+  font-size: 14px;
+}
