@@ -1,0 +1,15 @@
+# Dossiers locaux
+/vendor/
+node_modules/
+.idea/
+.vscode/
+.DS_Store
+
+# Fichiers système
+Thumbs.db
+
+# Fichiers de config sensibles
+.env
+
+# XAMPP
+xampp/
