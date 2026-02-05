@@ -23,40 +23,50 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 </head>
 
 <body>
-<header class="main-header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand logo" href="index.php">AK</a>
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.php">AK</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav nav-menu">
-            <li class="nav-item">
-              <a class="nav-link <?= ($currentPage == 'index.php') ? 'active' : '' ?>" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?= ($currentPage == 'about.php') ? 'active' : '' ?>" href="about.php">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?= ($currentPage == 'projects.php') ? 'active' : '' ?>" href="projects.php">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?= ($currentPage == 'portfolio.php') ? 'active' : '' ?>" href="portfolio.php">BTS Sio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?= ($currentPage == 'veille.php') ? 'active' : '' ?>" href="veille.php">Veille Technologique</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link <?= ($currentPage == 'contact.php') ? 'active' : '' ?>" href="contact.php">Contact</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav nav-menu">
+              <!-- <li class="nav-item">
+                <a class="nav-link <?= ($currentPage == 'index.php') ? 'active' : '' ?>" href="index.php">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="<?= ($currentPage == 'index.php') ? '#parcours' : 'index.php#parcours' ?>">
+                  Parcours
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link <?= ($currentPage == 'projects.php') ? 'active' : '' ?>" href="projects.php">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <?= ($currentPage == 'bts_sio.php') ? 'active' : '' ?>" href="bts_sio.php">BTS Sio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <?= ($currentPage == 'veille.php') ? 'active' : '' ?>" href="veille.php">Veille Technologique</a>
+              </li>
+
+            </ul>
+          </div>
+          <div>
+            <button class="nav-button">
+              <a class="nav-link"
+                href="<?= ($currentPage == 'index.php') ? '#contact' : 'index.php#contact' ?>">
+                Contact
+              </a>
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
+      </nav>
+    </div>
+  </header>
