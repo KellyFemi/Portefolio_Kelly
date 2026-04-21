@@ -13,6 +13,8 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
   <!-- CSS communs à toutes les pages -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/veille.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/footer.css">
 
@@ -40,18 +42,21 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <a class="nav-link <?= ($currentPage == 'index.php') ? 'active' : '' ?>" href="index.php">Home</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link"
-                  href="<?= ($currentPage == 'index.php') ? '#parcours' : 'index.php#parcours' ?>">
-                  Parcours
-                </a>
+                <a class="nav-link <?= ($currentPage == 'index.php') ? 'active' : '' ?>" href="index.php">Accueil</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link <?= ($currentPage == 'bts_sio.php') ? 'active' : '' ?>" href="bts_sio.php">BTS SIO</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link <?= ($currentPage == 'tableau_synthese.php') ? 'active' : '' ?>" href="tableau_synthese.php">Tableau de Synthèse</a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link <?= ($currentPage == 'projects.php') ? 'active' : '' ?>" href="projects.php">Projets</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link <?= ($currentPage == 'bts_sio.php') ? 'active' : '' ?>" href="bts_sio.php">BTS Sio</a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link <?= ($currentPage == 'veille.php') ? 'active' : '' ?>" href="veille.php">Veille Technologique</a>
               </li>

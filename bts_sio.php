@@ -142,8 +142,8 @@ $pageTitle = "bts_sio - Portfolio";
         <!-- DEBOUCHES -->
         <section class="py-5 text-white" style="background-color:#c32257;">
             <div class="container">
-                <h2 class="fw-bold mb-4">Débouchés professionnels</h2>
-                <div class="row">
+                <h2 class="fw-bold mb-4 text-center">Débouchés professionnels</h2>
+                <div class="row is-justify-content-center g-3 ">
                     <div class="col-md-6">• Développeur web</div>
                     <div class="col-md-6">• Administrateur systèmes & réseaux</div>
                     <div class="col-md-6">• Technicien support</div>

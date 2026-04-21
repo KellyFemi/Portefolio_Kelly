@@ -1,6 +1,5 @@
 <?php
 $pageTitle = "Accueil - Portfolio";
-// include('includes/header.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +10,6 @@ $pageTitle = "Accueil - Portfolio";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oluwa Femi - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
 
 <body>
@@ -19,34 +17,32 @@ $pageTitle = "Accueil - Portfolio";
 
   <main>
     <section class="hero-section">
-      <div class="container ">
+      <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12 order-2 order-lg-1 ">
-            <h1 class="hero-title"> <span>
-                < </span> Kelly AKPO <span> /> </span> </h1>
-            <div style="margin-left:100px;">
+          <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span>
+                  <span><</span>Kelly AKPO <span>/></span>
+                </span>
+              </h1>
               <div class="typing-container">
                 <span class="text-display"></span>
                 <span class="cursor"></span>
               </div>
-              </p class="text-description1">
-              Le talent dont votre entreprise a besoin.
+              <p class="text-description1">
+                Le talent dont votre entreprise a besoin.
               </p>
               <button class="btn-cv" onclick="openCVModal()">
                 Voir mon CV
               </button>
             </div>
           </div>
-
-
-
-          <div class=" col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
+          <div class="col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
             <img src="assets/images/d9925bac-5ea9-4659-a3c9-224fab460fc9.png" alt="Kelly" class="img-fluid hero-image">
           </div>
         </div>
-
-
-
         <div class="text-description2">
           <p class="text-description2-content">
             Je bâtis des produits numériques pensés jusqu'au détail. Une pratique
@@ -55,68 +51,72 @@ $pageTitle = "Accueil - Portfolio";
         </div>
       </div>
     </section>
+    <!-- Section Formation -->
+    <section class="formations-section">
+      <div>
+        <h2 class="formations-title">Mes Formations</h2>
+        <p class="formations-subtitle">Un parcours construit sur la curiosité et la rigueur.</p>
 
+        <div class="formation-timeline">
 
-    <!-- Section Parcours -->
-    <section id="parcours" class="parcours-section">
-      <div class="container">
-        <h2 class="parcours-title">Mon Parcours</h2>
-        <p class="parcours-subtitle">
-          Une évolution constante guidée par la recherche d'impact et d'efficacité.
-        </p>
-
-        <div class="timeline">
-          <!-- Item 1 - Gauche -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">Mai 2025 - Decembre 2025</div>
-              <h3 class="timeline-title">Developpeuse web</h3>
-              <p class="timeline-company">IFFP — Nanterre, France</p>
-              <p class="timeline-description">
-                Conception et développement de sites web dynamiques en respectant les besoins des
-                utilisateurs. Intégration d’interfaces responsives,
-                optimisation de l’expérience utilisateur et maintenance des fonctionnalités existantes.
-              </p>
+          <!-- Formation 1 -->
+          <div class="formation-item">
+            <div class="formation-card">
+              <div class="formation-logo">
+                <img src="assets/images/efrei.png" alt="Efrei" onerror="this.style.display='none';this.parentElement.textContent='EF'">
+              </div>
+              <div class="formation-info">
+                <div class="formation-school">EFREI — Paris</div>
+                <div class="formation-degree">BTS SIO option SLAM</div>
+                <div class="formation-desc">Pendant mes deux années de BTS SIO option SLAM, j'ai acquis des compétences en développement d'applications et de sites web.</div>
+              </div>
             </div>
+            <div class="formation-dot"></div>
+            <div class="formation-date">2024 — 2026</div>
           </div>
 
-          <!-- Item 2 - Droite -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">Août 2023 - Août 2024</div>
-              <h3 class="timeline-title">Developpeuse Full Stack</h3>
-              <p class="timeline-company">MALAIKA GAMES — Cotonou, Bénin</p>
-              <p class="timeline-description">
-                Développement complet d’applications web, côté front-end et back-end.
-                Gestion des bases de données, création d’API, intégration des interfaces
-                et participation à toutes les étapes du projet, de l’analyse au déploiement.
-              </p>
+          <!-- Formation 2 -->
+          <div class="formation-item">
+            <div class="formation-card">
+              <div class="formation-logo">
+                <img src="assets/images/Eneam.jpg" alt="ENEAM" onerror="this.style.display='none';this.parentElement.textContent='EN'">
+              </div>
+              <div class="formation-info">
+                <div class="formation-school">ENEAM — Bénin</div>
+                <div class="formation-degree">Licence Professionnelle en Informatique</div>
+                <div class="formation-desc">Ma licence professionnelle en Informatique m'a permis de découvrir le monde informatique en géneral et de développer des compétences en programmation, en réseaux et en bases de données.</div>
+              </div>
             </div>
+            <div class="formation-dot"></div>
+            <div class="formation-date">2020 — 2023</div>
           </div>
 
-          <!-- Item 3 - Gauche -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">Avril 2023 - Juillet 2023</div>
-              <h3 class="timeline-title">Chef de Projet Digital IT</h3>
-              <p class="timeline-company">Nextmux — Cotonou, Bénin</p>
-              <p class="timeline-description">
-                Pilotage de projets digitaux et informatiques de la phase de conception à la mise
-                en production. Coordination des équipes, suivi des délais,
-                gestion des priorités et assurance de la qualité des livrables selon les besoins du client. </p>
+          <!-- Formation 3 -->
+          <div class="formation-item">
+            <div class="formation-card">
+              <div class="formation-logo">
+                <img src="assets/images/houphouet_boigny.png" alt="Houphouet Boigny" onerror="this.style.display='none';this.parentElement.textContent='HB'">
+              </div>
+              <div class="formation-info">
+                <div class="formation-school">Complexe Scolaire Félix Houphouet Boigny - Bénin</div>
+                <div class="formation-degree">BAC (D) Série Scientifique</div>
+                <div class="formation-desc">J'ai obtenu mon BAC (D) en série scientifique, ce qui m'a permis de développer une solide base en mathématiques et en sciences.</div>
+              </div>
             </div>
+            <div class="formation-dot"></div>
+            <div class="formation-date">2019 — 2020</div>
           </div>
+
         </div>
       </div>
     </section>
 
+
     <!-- Section Compétences -->
     <section id="" class="competences-section">
       <div class="container">
-        <h2 class="competences-title">Mes compétences</h2>
+        <h2 class="formations-title">Mes compétences </h2>
+        <p class="formations-subtitle">Tout au long de mon parcours, j'ai acquis des compétences en programmation, réseaux et pris en mains plusieurs outils essentiels.</p>
 
         <!-- Langages de programmation -->
         <h3 class="competences-subtitle">Langages de programmation</h3>
@@ -136,7 +136,13 @@ $pageTitle = "Accueil - Portfolio";
             </div>
             <span class="competence-name">CSS3</span>
           </div>
-
+          <!-- Java -->
+          <div class="competence-item">
+            <div class="competence-icon">
+              <img src="assets/skills/java.svg" alt="Java">
+            </div>
+            <span class="competence-name">Java</span>
+          </div>
           <!-- JavaScript -->
           <div class="competence-item">
             <div class="competence-icon">
@@ -237,12 +243,12 @@ $pageTitle = "Accueil - Portfolio";
             <span class="competence-name">Figma</span>
           </div>
 
-          <!-- VS Code -->
+          <!-- Trello -->
           <div class="competence-item">
             <div class="competence-icon">
-              <img src="assets/skills/vmware.svg" alt="VM Ware">
+              <img src="assets/skills/trello.svg" alt="Trello">
             </div>
-            <span class="competence-name">VM Ware</span>
+            <span class="competence-name">Trello</span>
           </div>
 
           <!-- WordPress -->
@@ -253,14 +259,120 @@ $pageTitle = "Accueil - Portfolio";
             <span class="competence-name">WordPress</span>
           </div>
         </div>
+
+        <!-- Réseaux et systèmes -->
+        <h3 class="competences-subtitle">Réseaux et systèmes</h3>
+        <div class="competences-grid">
+          <!-- GLPI -->
+          <div class="competence-item">
+            <div class="competence-icon">
+              <img src="assets/skills/glpi.svg" alt="GLPI">
+            </div>
+            <span class="competence-name">GLPI</span>
+          </div>
+
+          <!-- VM Ware -->
+          <div class="competence-item">
+            <div class="competence-icon">
+              <img src="assets/skills/vmware.svg" alt="VM Ware">
+            </div>
+            <span class="competence-name">VM Ware</span>
+          </div>
+
+          <!-- Cisco Packet Tracer -->
+          <div class="competence-item">
+            <div class="competence-icon">
+              <img src="assets/skills/cisco_Packet_Tracer.svg" alt="Cisco Packet Tracer">
+            </div>
+            <span class="competence-name">Cisco Packet Tracer</span>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Parcours -->
+    <section id="parcours" class="parcours-section">
+      <div class="container">
+        
+        <h2 class="formations-title">Mon Parcours Professionnel </h2>
+        <p class="formations-subtitle"> J'ai effectué plusieurs stages dans le domaine du développement web et de la gestion de projets.</p>
+
+        <div class="timeline">
+          <!-- Item 1 - Gauche -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Mai 2025 - Juillet 2025</div>
+              <h3 class="timeline-title">Developpeuse web</h3>
+              <p class="timeline-company">IFFP — Nanterre, France</p>
+              <p class="timeline-description">
+                Durant ce stage, j'ai géré un projet client via Trello en
+                coordonnant les tâches de l'équipe et en animant les réunions de suivi.
+                J'ai également participé au développement d'une application web de gestion
+                des factures, configuré une machine virtuelle Debian, géré les droits d'accès
+                utilisateurs et rédigé des guides d'utilisation pour accompagner la prise
+                en main des outils.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 - Droite -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Novembre 2025 - Janvier 2026</div>
+              <h3 class="timeline-title">Developpeuse web</h3>
+              <p class="timeline-company">IFFP — Nanterre, France</p>
+              <p class="timeline-description">
+                Lors de mon second stage, j'ai optimisé le site web de l'organisation
+                (front-end et back-end), déployé une application web sur un serveur IONOS et
+                développé des scripts d'automatisation avec Google Apps Script. J'ai également
+                recueilli les besoins clients, rédigé des cahiers des charges, géré les comptes
+                utilisateurs via Google Admin et sensibilisé les équipes aux bonnes pratiques de
+                cybersécurité. </p>
+            </div>
+          </div>
+
+          <!-- Item 3 - Gauche -->
+          <!-- <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Août 2023 - Août 2024</div>
+              <h3 class="timeline-title">Developpeuse Full Stack</h3>
+              <p class="timeline-company">MALAIKA GAMES — Cotonou, Bénin</p>
+              <p class="timeline-description">
+                Développement complet d’applications web, côté front-end et back-end.
+                Gestion des bases de données, création d’API, intégration des interfaces
+                et participation à toutes les étapes du projet, de l’analyse au déploiement.
+              </p>
+            </div>
+          </div> -->
+
+          <!-- Item 4 - Droite -->
+          <!-- <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Avril 2023 - Juillet 2023</div>
+              <h3 class="timeline-title"> Assistante Chef de Projet </h3>
+              <p class="timeline-company">Nextmux — Cotonou, Bénin</p>
+              <p class="timeline-description">
+                Pilotage de projets digitaux et informatiques de la phase de conception à la mise
+                en production. Coordination des équipes, suivi des délais,
+                gestion des priorités et assurance de la qualité des livrables selon les besoins du client. </p>
+            </div>
+          </div> -->
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="contact-section">
 
-      <a href="#" class="btn-book">
-        PRENDRE UN RENDEZ-VOUS
-      </a>
+    <!-- Section Bloc de Compétences -->
+    <section>
+
+    </section>
+
+    <section id="contact" class="contact-section">
 
       <a href="mailto:akpokelly1@gmail.com" class="contact-item">
         akpokelly1@gmail.com
@@ -283,7 +395,7 @@ $pageTitle = "Accueil - Portfolio";
 
 
   </main>
-  <!-- Modal CV avec Image Preview -->
+  <!-- Modal CV -->
   <div id="cvModal" class="cv-modal">
     <div class="cv-modal-content">
       <div class="cv-modal-header">
@@ -294,15 +406,16 @@ $pageTitle = "Accueil - Portfolio";
       <div class="cv-modal-body">
         <!-- Aperçu du CV en image -->
         <div class="cv-preview">
-          <img src="assets/cv/cv-preview.jpg" alt="Mon CV" class="cv-image">
+          <img src="assets/cv/cv_preview.jpg" alt="Mon CV" class="cv-image">
         </div>
       </div>
 
       <div class="cv-modal-footer">
-        <a href="assets/cv/mon-cv.pdf" download="CV-Kelly-AKPO.pdf" class="btn-download">
-          <span>⬇️</span> Télécharger le CV (PDF)
+        <a href="https://drive.google.com/uc?export=download&id=1rE4x7Zz8FqnvuAKG_vT75n3LQjGTaagH"
+          download="CV-Kelly-AKPO.pdf"
+          class="btn-download">
+          Télécharger le CV (PDF)
         </a>
-
         <button class="btn-close-modal" onclick="closeCVModal()">Fermer</button>
       </div>
     </div>
@@ -322,7 +435,7 @@ $pageTitle = "Accueil - Portfolio";
     });
 
     const texts = [
-      "Chef de Projet Digital",
+      "Développeuse Full Stack",
       "Développeuse Frontend",
       "Développeuse Backend"
     ];
@@ -378,8 +491,8 @@ $pageTitle = "Accueil - Portfolio";
 
     // Options pour l'observateur
     const observerOptions = {
-      threshold: 0.3,
-      rootMargin: '0px 0px -100px 0px'
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
     };
 
     // Observer pour les items
