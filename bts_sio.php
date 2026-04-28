@@ -24,6 +24,10 @@ $pageTitle = "bts_sio - Portfolio";
             object-fit: cover;
             object-position: center;
         }
+
+        .col-md-6 {
+            text-align: center;
+        }
     </style>
 
 </head>
@@ -144,10 +148,13 @@ $pageTitle = "bts_sio - Portfolio";
             <div class="container">
                 <h2 class="fw-bold mb-4 text-center">Débouchés professionnels</h2>
                 <div class="row is-justify-content-center g-3 ">
-                    <div class="col-md-6">• Développeur web</div>
-                    <div class="col-md-6">• Administrateur systèmes & réseaux</div>
-                    <div class="col-md-6">• Technicien support</div>
+                    <div class="col-md-6">• Technicien d’infrastructure</div>
+                    <div class="col-md-6">• Administrateur Support systèmes et réseaux</div>
+                    <div class="col-md-6">• Technicien support et développement</div>
                     <div class="col-md-6">• Analyste programmeur</div>
+                    <div class="col-md-6">• Programmeur d’applications</div>
+                    <div class="col-md-6">• Développeur d’applications informatiques/mobiles</div>
+
                 </div>
             </div>
         </section>

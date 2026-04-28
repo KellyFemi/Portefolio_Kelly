@@ -13,66 +13,65 @@ $maj      = $data['derniere_maj'];
 // ── Articles manuels par thème (4 par bloc) ───────────────────
 $articles_cicd = [
     [
-        'titre'  => 'GitHub Actions : automatiser ses workflows de bout en bout',
-        'date'   => '12/03/2024',
-        'source' => 'GitHub Blog',
-        'lien'   => 'https://github.blog/2024-03-12-github-actions-new-features/',
-        'resume' => 'GitHub Actions s\'impose comme l\'outil CI/CD natif de référence. Cet article détaille la configuration de pipelines automatisés depuis un simple fichier YAML.',
+        'titre'  => 'L\'approche CI/CD, qu\'est-ce que c\'est ?',
+        'date'   => '15/05/2024',
+        'source' => 'Red Hat',
+        'lien'   => 'https://www.redhat.com/en/topics/devops/what-is-ci-cd',
+        'resume' => 'La référence sur le sujet. Red Hat explique en détail les concepts d\'intégration continue, de livraison continue et de déploiement continu, ainsi que leur place dans une approche DevOps.',
     ],
     [
-        'titre'  => 'GitLab CI/CD : pipelines multi-stages pour applications PHP',
-        'date'   => '28/05/2024',
-        'source' => 'GitLab Docs',
-        'lien'   => 'https://docs.gitlab.com/ee/ci/quick_start/',
-        'resume' => 'Bonnes pratiques pour structurer des pipelines CI/CD en plusieurs étapes : lint, test, build et deploy. Gestion des variables d\'environnement sécurisées.',
+        'titre'  => 'Intégration continue et déploiement continu (CI/CD) dans DevOps',
+        'date'   => '30/05/2024',
+        'source' => 'QRP International',
+        'lien'   => 'https://www.qrpinternational.fr/blog/gestion-des-services-informatiques/integration-continue-et-deploiement-continu-ci-cd-dans-devops/',
+        'resume' => 'Article en français qui explique simplement les deux concepts : l\'intégration continue teste automatiquement les modifications de code, et le déploiement continu les publie automatiquement.',
     ],
     [
-        'titre'  => 'Docker dans les pipelines CI : conteneuriser pour mieux déployer',
-        'date'   => '09/07/2024',
-        'source' => 'Docker Blog',
-        'lien'   => 'https://www.docker.com/blog/docker-best-practices-for-ci-cd/',
-        'resume' => 'Comment utiliser des images Docker dans les pipelines CI pour garantir que l\'application tourne de façon identique en local, en test et en production.',
+        'titre'  => 'Mettre en place une CI GitHub Actions',
+        'date'   => '18/09/2024',
+        'source' => 'Apprendre-la-programmation.net',
+        'lien'   => 'https://apprendre-la-programmation.net/configurer-ci-github-actions/',
+        'resume' => 'Tutoriel pas à pas en français pour configurer une intégration continue avec GitHub Actions. L\'article couvre la création d\'un fichier YAML, le lancement des tests et l\'analyse du coverage.',
     ],
     [
-        'titre'  => 'Tests automatisés dans le CI : PHPUnit, Jest et couverture de code',
-        'date'   => '05/03/2025',
-        'source' => 'Dev.to',
-        'lien'   => 'https://dev.to/testing-ci-cd-php-js',
-        'resume' => 'Comparatif PHPUnit vs Jest avec intégration des rapports de couverture directement dans les pull requests. Bloquer un merge si la couverture descend sous 80 %.',
+        'titre'  => 'Comment utiliser les GitHub Actions',
+        'date'   => '16/06/2025',
+        'source' => 'Docstring.fr',
+        'lien'   => 'https://www.docstring.fr/blog/comment-utiliser-les-github-actions/',
+        'resume' => 'Guide concret basé sur un projet Python/Django. L\'article montre comment configurer un workflow GitHub Actions, gérer les secrets et automatiser les tests à chaque push.',
     ],
 ];
 
 $articles_devops = [
     [
-        'titre'  => 'Vercel & déploiement automatique : du push au site en production',
-        'date'   => '02/10/2024',
-        'source' => 'Vercel Blog',
-        'lien'   => 'https://vercel.com/blog/automatic-deployments',
-        'resume' => 'Chaque push sur une branche génère automatiquement une preview URL unique. Deploy hooks, rollbacks instantanés et intégration avec les frameworks JS modernes.',
+        'titre'  => 'Intégration continue, livraison continue et déploiement continu',
+        'date'   => '12/03/2024',
+        'source' => 'Atlassian',
+        'lien'   => 'https://www.atlassian.com/fr/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment',
+        'resume' => 'Atlassian démêle les trois concepts souvent confondus : CI, livraison continue et déploiement continu. L\'article explique leurs différences, leurs avantages et comment les combiner efficacement.',
     ],
     [
-        'titre'  => 'AWS CodePipeline : orchestrer le CI/CD dans l\'écosystème Amazon',
-        'date'   => '18/01/2025',
-        'source' => 'AWS News Blog',
-        'lien'   => 'https://aws.amazon.com/blogs/devops/aws-codepipeline-best-practices/',
-        'resume' => 'CodePipeline orchestre les pipelines CI/CD dans le cloud AWS. Comparatif managed vs self-hosted avec intégration CodeBuild, CodeDeploy et services ECS/EKS.',
+        'titre'  => 'Les cinq meilleurs outils CI/CD dont chaque DevOps a besoin',
+        'date'   => '27/01/2026',
+        'source' => 'Atlassian',
+        'lien'   => 'https://www.atlassian.com/fr/devops/devops-tools/cicd-tools',
+        'resume' => 'Tour d\'horizon des principaux outils CI/CD du marché (Bitbucket Pipelines, Bamboo, Jenkins...). L\'article explique leurs forces, leurs cas d\'usage et comment choisir selon la taille du projet.',
     ],
     [
-        'titre'  => 'Infrastructure as Code avec Terraform : gérer ses envs comme du code',
-        'date'   => '14/11/2024',
-        'source' => 'HashiCorp Blog',
-        'lien'   => 'https://developer.hashicorp.com/terraform',
-        'resume' => 'Terraform permet de versionner et déployer l\'infrastructure exactement comme le code applicatif. Plan, apply, destroy : un workflow DevOps complet et reproductible.',
+        'titre'  => 'CI/CD : intégration et déploiement continu décryptés',
+        'date'   => '09/04/2025',
+        'source' => 'Ewolve',
+        'lien'   => 'https://ewolve.fr/blog/ci-cd-integration-deploiement-continu',
+        'resume' => 'Article récent qui explique comment le CI/CD permet d\'automatiser les tests, les builds et les déploiements pour améliorer la qualité logicielle et accélérer les livraisons.',
     ],
     [
-        'titre'  => 'Kubernetes en 2025 : l\'orchestration de conteneurs devient standard',
-        'date'   => '03/02/2025',
-        'source' => 'InfoQ',
-        'lien'   => 'https://www.infoq.com/kubernetes-2025/',
-        'resume' => 'Tour d\'horizon des évolutions de Kubernetes en 2025 : simplification du déploiement, intégration GitOps avec ArgoCD et Flux, et montée en puissance de K3s.',
+        'titre'  => 'GitHub Actions : construire, tester et déployer sans effort',
+        'date'   => '16/02/2023',
+        'source' => 'Les Enovateurs',
+        'lien'   => 'https://les-enovateurs.com/github-actions-construire-tester-et-deployer-sans-effort-ci-cd',
+        'resume' => 'Vue d\'ensemble accessible de GitHub Actions : workflows YAML, runners Linux/Windows/macOS, marketplace d\'actions. Un bon point de départ pour comprendre le CI/CD appliqué à un projet réel.',
     ],
 ];
-
 function render_manual_card(array $article, int $index): string
 {
     $titre  = htmlspecialchars($article['titre']);
@@ -368,59 +367,63 @@ function render_rss_card(array $article, bool $archive = false): string
             </div>
         </section>
 
-        <!-- ══ OUTILS DE VEILLE ══ -->
-        <section class="v-outils-section">
-            <div class="container">
-                <div class="v-section-header">
-                    <div>
-                        <h2 class="v-section-titre">Outils de veille</h2>
-                    </div>
-                </div>
-                <div class="v-outils-grid">
-                    <div class="v-outil-card">
-                        <div class="v-outil-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 11a9 9 0 0 1 9 9" />
-                                <path d="M4 4a16 16 0 0 1 16 16" />
-                                <circle cx="5" cy="19" r="1" />
-                            </svg>
-                        </div>
-                        <h3 class="v-outil-titre">Flux RSS automatisés</h3>
-                        <p class="v-outil-desc">GitHub Blog, Docker Blog, Dev.to et Google Alertes agrégés et mis en cache toutes les heures via un script PHP maison.</p>
-                    </div>
-                    <div class="v-outil-card">
-                        <div class="v-outil-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="11" cy="11" r="8" />
-                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                            </svg>
-                        </div>
-                        <h3 class="v-outil-titre">Google Alertes</h3>
-                        <p class="v-outil-desc">Alertes configurées sur "CI/CD", "DevOps", "GitHub Actions", "Docker" pour recevoir les dernières publications en temps réel.</p>
-                    </div>
-                    <div class="v-outil-card">
-                        <div class="v-outil-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                            </svg>
-                        </div>
-                        <h3 class="v-outil-titre">GitHub</h3>
-                        <p class="v-outil-desc">Suivi des releases des projets clés : GitHub Actions, Docker, ArgoCD, Terraform. Les changelogs sont une source précieuse d'informations techniques.</p>
-                    </div>
-                    <div class="v-outil-card">
-                        <div class="v-outil-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10" />
-                                <line x1="2" y1="12" x2="22" y2="12" />
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                            </svg>
-                        </div>
-                        <h3 class="v-outil-titre">Dev.to & InfoQ</h3>
-                        <p class="v-outil-desc">Lecture régulière des articles tagués #cicd, #devops et #docker sur Dev.to. InfoQ pour les analyses techniques approfondies.</p>
-                    </div>
-                </div>
+       <!-- ══ OUTILS DE VEILLE ══ -->
+<section class="v-outils-section">
+    <div class="container">
+        <div class="v-section-header">
+            <div>
+                <h2 class="v-section-titre">Outils de veille</h2>
             </div>
-        </section>
+        </div>
+        <div class="v-outils-grid">
+
+            <div class="v-outil-card">
+                <div class="v-outil-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                </div>
+                <h3 class="v-outil-titre">Google Alertes</h3>
+                <p class="v-outil-desc">Alertes configurées sur les mots-clés "CI/CD", "intégration continue", "GitHub Actions" et "DevOps" pour recevoir les nouvelles publications directement par e-mail.</p>
+            </div>
+
+            <div class="v-outil-card">
+                <div class="v-outil-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/>
+                    </svg>
+                </div>
+                <h3 class="v-outil-titre">Flux RSS automatisés</h3>
+                <p class="v-outil-desc">Agrégation automatique des flux RSS de Dev.to, GitHub Blog et Docker Blog via un script PHP avec mise en cache toutes les heures.</p>
+            </div>
+
+            <div class="v-outil-card">
+                <div class="v-outil-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <h3 class="v-outil-titre">Sites spécialisés</h3>
+                <p class="v-outil-desc">Lecture régulière de Red Hat, Atlassian, Ewolve et QRP International pour leurs articles de fond sur le CI/CD et le DevOps, disponibles en français.</p>
+            </div>
+
+            <div class="v-outil-card">
+                <div class="v-outil-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                </div>
+                <h3 class="v-outil-titre">Blogs & tutoriels dev</h3>
+                <p class="v-outil-desc">Docstring.fr, Apprendre-la-programmation.net et Les Enovateurs pour des tutoriels pratiques en français avec des exemples de code concrets.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <?php include('includes/footer.php'); ?>
 

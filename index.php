@@ -24,15 +24,19 @@ $pageTitle = "Accueil - Portfolio";
             <div class="hero-content">
               <h1 class="hero-title">
                 <span>
-                  <span><</span>Kelly AKPO <span>/></span>
-                </span>
+                  <span>
+                    < <span> Kelly AKPO <span>/></span>
+                  </span>
               </h1>
               <div class="typing-container">
                 <span class="text-display"></span>
                 <span class="cursor"></span>
               </div>
               <p class="text-description1">
-                Le talent dont votre entreprise a besoin.
+                Étudiante en BTS SIO option SLAM, je me spécialise dans les solutions logiciel et
+                application métier. <br> Mon parcours me permet d'acquérir
+                des compétences en programmation et en sécurité informatique.
+
               </p>
               <button class="btn-cv" onclick="openCVModal()">
                 Voir mon CV
@@ -45,8 +49,8 @@ $pageTitle = "Accueil - Portfolio";
         </div>
         <div class="text-description2">
           <p class="text-description2-content">
-            Je bâtis des produits numériques pensés jusqu'au détail. Une pratique
-            où la logique nourrit la vision et créativité, conçue pour performer.
+            J'allie théorie et pratique pour développer une expertise complète dans le domaine des infrastructures IT.
+
           </p>
         </div>
       </div>
@@ -295,7 +299,7 @@ $pageTitle = "Accueil - Portfolio";
     <!-- Section Parcours -->
     <section id="parcours" class="parcours-section">
       <div class="container">
-        
+
         <h2 class="formations-title">Mon Parcours Professionnel </h2>
         <p class="formations-subtitle"> J'ai effectué plusieurs stages dans le domaine du développement web et de la gestion de projets.</p>
 

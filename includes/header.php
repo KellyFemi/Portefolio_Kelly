@@ -10,7 +10,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $pageTitle ?? 'Portfolio' ?></title>
-
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <!-- CSS communs à toutes les pages -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/veille.css">
@@ -56,7 +56,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
               <li class="nav-item">
                 <a class="nav-link <?= ($currentPage == 'projects.php') ? 'active' : '' ?>" href="projects.php">Projets</a>
               </li>
-              
+
               <li class="nav-item">
                 <a class="nav-link <?= ($currentPage == 'veille.php') ? 'active' : '' ?>" href="veille.php">Veille Technologique</a>
               </li>

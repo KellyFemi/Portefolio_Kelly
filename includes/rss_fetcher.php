@@ -2,8 +2,7 @@
 /**
  * rss_fetcher.php
  * ─────────────────────────────────────────────────────────────
- * Récupère et met en cache les articles RSS depuis plusieurs sources.
- * Compatible InfinityFree (utilise cURL, pas file_get_contents).
+ * il récupère et met en cache les articles RSS depuis plusieurs sources.
  * 
  * UTILISATION : include('includes/rss_fetcher.php');
  * puis appeler : $articles = get_veille_articles();
@@ -14,41 +13,60 @@
 
 /**
  * Flux RSS à surveiller.
- * Remplace l'URL Google Alertes par la tienne (voir README ci-dessous).
  * 
- * COMMENT CRÉER TON FLUX GOOGLE ALERTES :
+ *  CRÉER le FLUX GOOGLE ALERTES :
  *  1. Va sur https://www.google.fr/alerts
  *  2. Tape "CI/CD DevOps" ou "intégration continue déploiement"
  *  3. Clique "Afficher les options" → Livrer à → "Flux RSS"
  *  4. Clique "Créer l'alerte"
- *  5. Dans "Mes alertes", clique sur l'icône RSS → copie l'URL
+ *  5. Dans "Mes alertes", cliquer sur l'icône RSS → copie l'URL
  *  6. Colle-la dans $RSS_SOURCES ci-dessous
- */
-$RSS_SOURCES = [
+ */$RSS_SOURCES = [
+    // ── Google Alertes (ton flux personnel) ──
     [
-        'nom'  => 'Google Alertes — CI/CD',
-        'url'  => 'https://www.google.com/alerts/feeds/00009545252344223537/12485788112706886604',
-        'tag'  => 'tools',
+        'nom' => 'Google Alertes — CI/CD',
+        'url' => 'https://www.google.com/alerts/feeds/00009545252344223537/12485788112706886604',
+        'tag' => 'ci',
+    ],
+
+    // ── Blogs français de référence DevOps ──
+    [
+        'nom' => 'Stéphane Robert — DevOps FR',
+        'url' => 'https://blog.stephane-robert.info/index.xml',
+        'tag' => 'cloud',
     ],
     [
-        'nom'  => 'Dev.to — CI/CD',
-        'url'  => 'https://dev.to/feed/tag/cicd',
-        'tag'  => 'ci',
+        'nom' => 'Le Monde Informatique — DevOps',
+        'url' => 'https://www.lemondeinformatique.fr/flux-rss/thematique/devops/rss.xml',
+        'tag' => 'cloud',
     ],
+
+    // ── GitHub Blog (officiel, en anglais) ──
     [
-        'nom'  => 'Dev.to — DevOps',
-        'url'  => 'https://dev.to/feed/tag/devops',
-        'tag'  => 'cloud',
+        'nom' => 'GitHub Blog',
+        'url' => 'https://github.blog/feed/',
+        'tag' => 'tools',
     ],
+
+    // ── Docker Blog (officiel) ──
     [
-        'nom'  => 'GitHub Blog',
-        'url'  => 'https://github.blog/feed/',
-        'tag'  => 'tools',
+        'nom' => 'Docker Blog',
+        'url' => 'https://www.docker.com/blog/feed/',
+        'tag' => 'tools',
     ],
+
+    // ── GitLab Blog (CI/CD natif) ──
     [
-        'nom'  => 'Docker Blog',
-        'url'  => 'https://www.docker.com/blog/feed/',
-        'tag'  => 'tools',
+        'nom' => 'GitLab Blog',
+        'url' => 'https://about.gitlab.com/atom.xml',
+        'tag' => 'ci',
+    ],
+
+    // ── Dev.to ciblé CI/CD uniquement ──
+    [
+        'nom' => 'Dev.to — CI/CD',
+        'url' => 'https://dev.to/feed/tag/cicd',
+        'tag' => 'ci',
     ],
 ];
 
