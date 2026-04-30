@@ -33,8 +33,8 @@ $pageTitle = "Accueil - Portfolio";
                 <span class="cursor"></span>
               </div>
               <p class="text-description1">
-                Étudiante en BTS SIO option SLAM, je me spécialise dans les solutions logiciel et
-                application métier. <br> Mon parcours me permet d'acquérir
+                Étudiante en BTS SIO option SLAM, je me spécialise dans les solutions logicielles et
+                applications métiers. <br> Mon parcours m'a permis d'acquérir
                 des compétences en programmation et en sécurité informatique.
 
               </p>
@@ -44,7 +44,7 @@ $pageTitle = "Accueil - Portfolio";
             </div>
           </div>
           <div class="col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
-            <img src="assets/images/d9925bac-5ea9-4659-a3c9-224fab460fc9.png" alt="Kelly" class="img-fluid hero-image">
+            <img src="assets/images/Profil.png" alt="Kelly" class="img-fluid hero-image">
           </div>
         </div>
         <div class="text-description2">
@@ -415,7 +415,7 @@ $pageTitle = "Accueil - Portfolio";
       </div>
 
       <div class="cv-modal-footer">
-        <a href="https://drive.google.com/uc?export=download&id=1rE4x7Zz8FqnvuAKG_vT75n3LQjGTaagH"
+        <a href="https://drive.google.com/file/d/10-Pr3PK_hK7uNVjqFISxfE-3tA-CsHhg/view?usp=drive_link"
           download="CV-Kelly-AKPO.pdf"
           class="btn-download">
           Télécharger le CV (PDF)
@@ -537,7 +537,6 @@ $pageTitle = "Accueil - Portfolio";
       const style = document.createElement('style');
       style.textContent = `.timeline::after { height: ${progress}% !important; }`;
 
-      // Remplacer l'ancien style s'il existe
       const oldStyle = document.getElementById('timeline-progress-style');
       if (oldStyle) {
         oldStyle.remove();

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * rss_fetcher.php
  * ─────────────────────────────────────────────────────────────
@@ -21,7 +22,7 @@
  *  4. Clique "Créer l'alerte"
  *  5. Dans "Mes alertes", cliquer sur l'icône RSS → copie l'URL
  *  6. Colle-la dans $RSS_SOURCES ci-dessous
- */$RSS_SOURCES = [
+ */ $RSS_SOURCES = [
     // ── Google Alertes (ton flux personnel) ──
     [
         'nom' => 'Google Alertes — CI/CD',
@@ -78,7 +79,44 @@ define('RSS_CACHE_DIR', __DIR__ . '/../cache/');
 
 // Nombre max d'articles récents affichés en haut
 define('RSS_MAX_RECENTS', 10);
+// Mots-clés à filtrer — offres d'emploi, spam, balises HTML
+define('RSS_SPAM_KEYWORDS', [
+    'e2e audit test',
+    'audit probe',
+    'delete me',
+    'test post',
+    'offre emploi',
+    "offre d'emploi",
+    'recrutement',
+    'recrute',
+    'cdi',
+    'cdd',
+    'freelance',
+    'mission freelance',
+    'alternance',
+    'apprenti(e)',
+    'stage',
+    'ingénieur systèmes',
+    'ingénieur devops',
+    'pass.gouv',
+    'emplois',
+    'postuler',
+    'poste de',
+    'vos missions',
+    'missions',
 
+
+]);
+
+function rss_is_spam(string $titre, string $resume): bool
+{
+    $t = mb_strtolower(strip_tags($titre));
+    $r = mb_strtolower(strip_tags($resume));
+    foreach (RSS_SPAM_KEYWORDS as $kw) {
+        if (str_contains($t, $kw) || str_contains($r, $kw)) return true;
+    }
+    return false;
+}
 // ── FONCTIONS ────────────────────────────────────────────────
 
 /**
@@ -143,7 +181,9 @@ function rss_parse_feed(string $xml_string, string $source_nom, string $tag): ar
             $timestamp = strtotime($date) ?: time();
 
             if (empty($titre) || empty($lien)) continue;
-
+            $titre = strip_tags($titre);
+            if (mb_strlen($titre) < 20) continue;
+            if (rss_is_spam($titre, $resume)) continue;
             $articles[] = [
                 'titre'     => $titre,
                 'lien'      => $lien,
@@ -174,7 +214,9 @@ function rss_parse_feed(string $xml_string, string $source_nom, string $tag): ar
             $resume    = mb_substr($resume, 0, 280) . (mb_strlen($resume) > 280 ? '…' : '');
 
             if (empty($titre) || empty($lien)) continue;
-
+            $titre = strip_tags($titre);
+            if (mb_strlen($titre) < 20) continue;
+            if (rss_is_spam($titre, $resume)) continue;
             $articles[] = [
                 'titre'     => $titre,
                 'lien'      => $lien,

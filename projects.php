@@ -51,9 +51,9 @@ $pageTitle = "bts_sio - Projets";
 
         <div class="proj-section-header">
           <div class="proj-section-header-left">
-            <span class="proj-section-num">01</span>
+            <!-- <span class="proj-section-num">01</span> -->
             <div>
-              <h2 class="proj-section-titre">Projets professionnels & scolaires</h2>
+              <h2 class="proj-section-titre">Projets personnels & scolaires</h2>
               <p class="proj-section-sous">BTS SIO — Réalisations en équipe et personnelles</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ $pageTitle = "bts_sio - Projets";
           </div>
           <div class="proj-card-body">
             <div class="proj-card-top">
-              <span class="proj-card-num">01</span>
+              <!-- <span class="proj-card-num">01</span> -->
               <div class="proj-tags">
                 <span class="proj-tag">JavaScript</span>
                 <span class="proj-tag">TypeScript</span>
@@ -143,7 +143,7 @@ $pageTitle = "bts_sio - Projets";
           </div>
           <div class="proj-card-body">
             <div class="proj-card-top">
-              <span class="proj-card-num">02</span>
+              <!-- <span class="proj-card-num">02</span> -->
               <div class="proj-tags">
                 <span class="proj-tag">C#</span>
                 <span class="proj-tag">XAML</span>
@@ -212,7 +212,7 @@ $pageTitle = "bts_sio - Projets";
           </div>
           <div class="proj-card-body">
             <div class="proj-card-top">
-              <span class="proj-card-num">03</span>
+              <!-- <span class="proj-card-num">03</span> -->
               <div class="proj-tags">
                 <span class="proj-tag">WordPress</span>
                 <span class="proj-tag">CSS</span>
@@ -271,7 +271,7 @@ $pageTitle = "bts_sio - Projets";
 
         <div class="proj-section-header">
           <div class="proj-section-header-left">
-            <span class="proj-section-num">02</span>
+            <!-- <span class="proj-section-num">02</span> -->
             <div>
               <h2 class="proj-section-titre">Projets personnels</h2>
               <p class="proj-section-sous">Initiatives personnelles — développement & créativité</p>
@@ -294,7 +294,7 @@ $pageTitle = "bts_sio - Projets";
           </div>
           <div class="proj-card-body">
             <div class="proj-card-top">
-              <span class="proj-card-num">03</span>
+              <!-- <span class="proj-card-num">03</span> -->
               <div class="proj-tags">
                 <span class="proj-tag">PHP</span>
                 <span class="proj-tag">HTML</span>
@@ -313,7 +313,7 @@ $pageTitle = "bts_sio - Projets";
             <div class="proj-card-infos">
               <div class="proj-info-item">
                 <span class="proj-info-label">Contexte</span>
-                <span class="proj-info-val">Projet scolaire BTS SIO</span>
+                <span class="proj-info-val">Projet personnel </span>
               </div>
               <div class="proj-info-item">
                 <span class="proj-info-label">Technologies</span>
@@ -368,7 +368,7 @@ $pageTitle = "bts_sio - Projets";
           </div>
           <div class="proj-card-body">
             <div class="proj-card-top">
-              <span class="proj-card-num">04</span>
+              <!-- <span class="proj-card-num">04</span> -->
               <div class="proj-tags">
                 <span class="proj-tag">Nuxt.js </span>
                 <span class="proj-tag">Laravel </span>
@@ -432,7 +432,7 @@ $pageTitle = "bts_sio - Projets";
           </div>
           <div class="proj-card-body">
             <div class="proj-card-top">
-              <span class="proj-card-num">05</span>
+              <!-- <span class="proj-card-num">05</span> -->
               <div class="proj-tags">
                 <span class="proj-tag">GLPI</span>
                 <span class="proj-tag">Linux</span>
@@ -447,10 +447,7 @@ $pageTitle = "bts_sio - Projets";
               découverte des modules (tickets, parc, administration).
             </p>
             <div class="proj-card-infos">
-              <div class="proj-info-item">
-                <span class="proj-info-label">Contexte</span>
-                <span class="proj-info-val">Scolaire BTS SIO</span>
-              </div>
+              
               <div class="proj-info-item">
                 <span class="proj-info-label">Environnement</span>
                 <span class="proj-info-val">VM Debian, Windows</span>

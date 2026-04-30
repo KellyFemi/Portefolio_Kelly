@@ -14,62 +14,62 @@ $maj      = $data['derniere_maj'];
 $articles_cicd = [
     [
         'titre'  => 'L\'approche CI/CD, qu\'est-ce que c\'est ?',
-        'date'   => '15/05/2024',
+        'date'   => '18/09/2024',
         'source' => 'Red Hat',
         'lien'   => 'https://www.redhat.com/en/topics/devops/what-is-ci-cd',
-        'resume' => 'La référence sur le sujet. Red Hat explique en détail les concepts d\'intégration continue, de livraison continue et de déploiement continu, ainsi que leur place dans une approche DevOps.',
+        'resume' => 'Red Hat explique en détail les concepts d\'intégration continue, de livraison continue et de déploiement continu, ainsi que leur place dans une approche DevOps moderne.',
     ],
     [
-        'titre'  => 'Intégration continue et déploiement continu (CI/CD) dans DevOps',
-        'date'   => '30/05/2024',
-        'source' => 'QRP International',
-        'lien'   => 'https://www.qrpinternational.fr/blog/gestion-des-services-informatiques/integration-continue-et-deploiement-continu-ci-cd-dans-devops/',
-        'resume' => 'Article en français qui explique simplement les deux concepts : l\'intégration continue teste automatiquement les modifications de code, et le déploiement continu les publie automatiquement.',
-    ],
-    [
-        'titre'  => 'Mettre en place une CI GitHub Actions',
+        'titre'  => 'Mettre en place une CI avec GitHub Actions',
         'date'   => '18/09/2024',
         'source' => 'Apprendre-la-programmation.net',
         'lien'   => 'https://apprendre-la-programmation.net/configurer-ci-github-actions/',
-        'resume' => 'Tutoriel pas à pas en français pour configurer une intégration continue avec GitHub Actions. L\'article couvre la création d\'un fichier YAML, le lancement des tests et l\'analyse du coverage.',
+        'resume' => 'Tutoriel pas à pas pour configurer une intégration continue avec GitHub Actions. Création d\'un fichier YAML, lancement des tests, analyse du coverage et intégration de SonarCloud.',
+    ],
+    [
+        'titre'  => 'Intégration continue et déploiement continu (CI/CD) dans DevOps',
+        'date'   => '14/03/2025',
+        'source' => 'QRP International',
+        'lien'   => 'https://www.qrpinternational.fr/blog/gestion-des-services-informatiques/integration-continue-et-deploiement-continu-ci-cd-dans-devops/',
+        'resume' => 'Article en français qui explique simplement les deux concepts : l\'intégration continue teste automatiquement les modifications de code, et le déploiement continu les publie sans intervention manuelle.',
     ],
     [
         'titre'  => 'Comment utiliser les GitHub Actions',
         'date'   => '16/06/2025',
         'source' => 'Docstring.fr',
         'lien'   => 'https://www.docstring.fr/blog/comment-utiliser-les-github-actions/',
-        'resume' => 'Guide concret basé sur un projet Python/Django. L\'article montre comment configurer un workflow GitHub Actions, gérer les secrets et automatiser les tests à chaque push.',
+        'resume' => 'Guide concret basé sur un projet Django. L\'article montre comment configurer un workflow GitHub Actions, gérer les secrets et automatiser les tests à chaque push sur le dépôt.',
     ],
 ];
 
 $articles_devops = [
     [
-        'titre'  => 'Intégration continue, livraison continue et déploiement continu',
-        'date'   => '12/03/2024',
+        'titre'  => 'CI vs livraison continue vs déploiement continu : quelles différences ?',
+        'date'   => '05/11/2024',
         'source' => 'Atlassian',
         'lien'   => 'https://www.atlassian.com/fr/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment',
-        'resume' => 'Atlassian démêle les trois concepts souvent confondus : CI, livraison continue et déploiement continu. L\'article explique leurs différences, leurs avantages et comment les combiner efficacement.',
-    ],
-    [
-        'titre'  => 'Les cinq meilleurs outils CI/CD dont chaque DevOps a besoin',
-        'date'   => '27/01/2026',
-        'source' => 'Atlassian',
-        'lien'   => 'https://www.atlassian.com/fr/devops/devops-tools/cicd-tools',
-        'resume' => 'Tour d\'horizon des principaux outils CI/CD du marché (Bitbucket Pipelines, Bamboo, Jenkins...). L\'article explique leurs forces, leurs cas d\'usage et comment choisir selon la taille du projet.',
-    ],
-    [
-        'titre'  => 'CI/CD : intégration et déploiement continu décryptés',
-        'date'   => '09/04/2025',
-        'source' => 'Ewolve',
-        'lien'   => 'https://ewolve.fr/blog/ci-cd-integration-deploiement-continu',
-        'resume' => 'Article récent qui explique comment le CI/CD permet d\'automatiser les tests, les builds et les déploiements pour améliorer la qualité logicielle et accélérer les livraisons.',
+        'resume' => 'Atlassian démêle les trois concepts souvent confondus : CI, livraison continue et déploiement continu, avec leurs différences, avantages et comment les combiner efficacement.',
     ],
     [
         'titre'  => 'GitHub Actions : construire, tester et déployer sans effort',
         'date'   => '16/02/2023',
         'source' => 'Les Enovateurs',
         'lien'   => 'https://les-enovateurs.com/github-actions-construire-tester-et-deployer-sans-effort-ci-cd',
-        'resume' => 'Vue d\'ensemble accessible de GitHub Actions : workflows YAML, runners Linux/Windows/macOS, marketplace d\'actions. Un bon point de départ pour comprendre le CI/CD appliqué à un projet réel.',
+        'resume' => 'Vue d\'ensemble de GitHub Actions : workflows YAML, runners Linux/Windows/macOS, marketplace d\'actions. Un bon point de départ pour comprendre le CI/CD appliqué à un projet réel.',
+    ],
+    [
+        'titre'  => 'CI/CD : intégration et déploiement continu décryptés',
+        'date'   => '09/04/2025',
+        'source' => 'Ewolve',
+        'lien'   => 'https://ewolve.fr/blog/ci-cd-integration-deploiement-continu',
+        'resume' => 'Article récent qui explique comment le CI/CD permet d\'automatiser les tests, les builds et les déploiements pour améliorer la qualité logicielle et accélérer les livraisons en production.',
+    ],
+    [
+        'titre'  => 'Les cinq meilleurs outils CI/CD dont chaque DevOps a besoin',
+        'date'   => '27/01/2026',
+        'source' => 'Atlassian',
+        'lien'   => 'https://www.atlassian.com/fr/devops/devops-tools/cicd-tools',
+        'resume' => 'Tour d\'horizon des principaux outils CI/CD du marché : Bitbucket Pipelines, Bamboo, Jenkins. L\'article explique leurs forces, leurs cas d\'usage et comment choisir selon la taille du projet.',
     ],
 ];
 function render_manual_card(array $article, int $index): string
