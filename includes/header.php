@@ -63,9 +63,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
             </ul>
           </div>
-          <div>
-            <button class="nav-button">
-              <a class="nav-link"
+          <div class="button_off">
+            <button class="nav-button ">
+              <a class="nav-link "
                 href="<?= ($currentPage == 'index.php') ? '#contact' : 'index.php#contact' ?>">
                 Contact
               </a>

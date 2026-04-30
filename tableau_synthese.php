@@ -123,7 +123,7 @@ $pageTitle = "bts_sio - Portfolio";
 
           <!-- Bouton -->
           <div class="tb-actions">
-            <a href="assets/docs/Tableau_Synthese.pdf" target="_blank" class="tb-btn">
+            <a href="https://drive.google.com/file/d/1WMWEi5nfmXUEh7hNLFNLvv4IOyHe9xqZ/view?usp=drive_link" target="_blank" class="tb-btn">
               Ouvrir le document complet
             </a>
           </div>

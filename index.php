@@ -296,6 +296,87 @@ $pageTitle = "Accueil - Portfolio";
 
       </div>
     </section>
+
+    <!-- Section Certifications -->
+
+    <!-- Section Certifications -->
+    <section class="certifications-section">
+      <div class="container">
+        <h2 class="formations-title">Mes certifications </h2>
+        <p class="certifications-subtitle">
+          Des certifications obtenues pour valider et approfondir mes compétences techniques.
+        </p>
+
+        <div class="certifications-grid">
+          <!-- Certification HTML -->
+          <div class="cert-card">
+            <a href="assets/docs/certification_html.pdf" target="_blank" class="cert-preview">
+              <div class="cert-preview-inner">
+                <img src="assets/images/certification_html.jpg" alt="Certification HTML" class="cert-img">
+
+              </div>
+            </a>
+            <div class="cert-body">
+              <span class="cert-badge">html</span>
+              <h3 class="cert-titre">Certification HTML</h3>
+              <p class="cert-desc">Validation des compétences necessaire à la mise en page du contenu d’une page web. </p>
+              <a href="assets/docs/certification_html.pdf" target="_blank" class="cert-link">
+                Ouvrir le certificat
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Certification CSS -->
+          <div class="cert-card">
+            <a href="assets/docs/certification_css.pdf" target="_blank" class="cert-preview">
+              <div class="cert-preview-inner">
+                <img src="assets/images/certification_css.jpg" alt="Certification CSS" class="cert-img">
+
+              </div>
+            </a>
+            <div class="cert-body">
+              <span class="cert-badge">CSS</span>
+              <h3 class="cert-titre">Certification CSS</h3>
+              <p class="cert-desc">Validation des compétences en feuilles de style et mise en page responsive.</p>
+              <a href="https://drive.google.com/file/d/1BREfriktTlV_du100g7nag2TsqUUITYS/view?usp=drive_link" target="_blank" class="cert-link">
+                Ouvrir le certificat
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Certification Python -->
+          <div class="cert-card">
+            <a href="assets/docs/certification_python.pdf" target="_blank" class="cert-preview">
+              <div class="cert-preview-inner">
+                <img src="assets/images/certification_python.jpg" alt="Certification Python" class="cert-img">
+
+              </div>
+            </a>
+            <div class="cert-body">
+              <span class="cert-badge">Python</span>
+              <h3 class="cert-titre">Certification Python</h3>
+              <p class="cert-desc">Validation des compétences en programmation Python et logique algorithmique.</p>
+              <a href="https://drive.google.com/file/d/12fgd_6F7iszsbIFlQbEyTb4LgcgsLv8-/view?usp=drive_link" target="_blank" class="cert-link">
+                Ouvrir le certificat
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
     <!-- Section Parcours -->
     <section id="parcours" class="parcours-section">
       <div class="container">
