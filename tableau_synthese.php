@@ -112,18 +112,18 @@ $pageTitle = "bts_sio - Portfolio";
           <!-- PDF affiché en iframe -->
           <div class="tb-pdf-wrapper">
             <iframe
-              src="assets/docs/tableau_synthese.pdf"
+              src="assets/docs/Tableau_Synthese.pdf"
               class="tb-iframe"
               title="Tableau de synthèse BTS SIO">
               <p>Votre navigateur ne supporte pas l'affichage des PDF.
-                <a href="assets/docs/Tableau_Synthese.pdf" target="_blank">Télécharger le document</a>
+                <a href="https://drive.google.com/file/d/1WMWEi5nfmXUEh7hNLFNLvv4IOyHe9xqZ/view?usp=drive_link" target="_blank">Télécharger le document</a>
               </p>
             </iframe>
           </div>
 
           <!-- Bouton -->
           <div class="tb-actions">
-            <a href="https://drive.google.com/file/d/1WMWEi5nfmXUEh7hNLFNLvv4IOyHe9xqZ/view?usp=drive_link" target="_blank" class="tb-btn">
+            <a href="assets/docs/Tableau_Synthese.pdf" target="_blank" class="tb-btn">
               Ouvrir le document complet
             </a>
           </div>

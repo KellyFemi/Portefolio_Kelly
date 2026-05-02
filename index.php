@@ -342,7 +342,7 @@ $pageTitle = "Accueil - Portfolio";
               <span class="cert-badge">CSS</span>
               <h3 class="cert-titre">Certification CSS</h3>
               <p class="cert-desc">Validation des compétences en feuilles de style et mise en page responsive.</p>
-              <a href="https://drive.google.com/file/d/1BREfriktTlV_du100g7nag2TsqUUITYS/view?usp=drive_link" target="_blank" class="cert-link">
+              <a href="assets/docs/certification_css.pdf" target="_blank" class="cert-link">
                 Ouvrir le certificat
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="7" y1="17" x2="17" y2="7" />
@@ -364,7 +364,7 @@ $pageTitle = "Accueil - Portfolio";
               <span class="cert-badge">Python</span>
               <h3 class="cert-titre">Certification Python</h3>
               <p class="cert-desc">Validation des compétences en programmation Python et logique algorithmique.</p>
-              <a href="https://drive.google.com/file/d/12fgd_6F7iszsbIFlQbEyTb4LgcgsLv8-/view?usp=drive_link" target="_blank" class="cert-link">
+              <a href="assets/docs/certification_python.pdf" target="_blank" class="cert-link">
                 Ouvrir le certificat
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="7" y1="17" x2="17" y2="7" />
@@ -451,11 +451,6 @@ $pageTitle = "Accueil - Portfolio";
       </div>
     </section>
 
-
-    <!-- Section Bloc de Compétences -->
-    <section>
-
-    </section>
 
     <section id="contact" class="contact-section">
 
