@@ -9,8 +9,7 @@ $pageTitle = "bts_sio - Projets";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">  <style>
     .card-img-container {
       height: 250px;
       overflow: hidden;
@@ -112,8 +111,8 @@ $pageTitle = "bts_sio - Projets";
               <span class="proj-feature">API REST</span>
             </div>
             <div class="proj-card-links">
-              <a href="#" target="_blank" class="proj-btn proj-btn--primary">
-                Voir le projet
+              <a href="assets/docs/description_prestalia.pdf" target="_blank" class="proj-btn proj-btn--primary">
+                Voir la documentation
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="7" y1="17" x2="17" y2="7" />
                   <polyline points="7 7 17 7 17 17" />
@@ -181,8 +180,8 @@ $pageTitle = "bts_sio - Projets";
               <span class="proj-feature">API REST</span>
             </div>
             <div class="proj-card-links">
-              <a href="#" target="_blank" class="proj-btn proj-btn--primary">
-                Voir le projet
+              <a href="assets/docs/description_prestalia.pdf" target="_blank" class="proj-btn proj-btn--primary">
+                Voir la documentation
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="7" y1="17" x2="17" y2="7" />
                   <polyline points="7 7 17 7 17 17" />
@@ -983,8 +982,7 @@ $pageTitle = "bts_sio - Projets";
       }
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

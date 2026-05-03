@@ -160,8 +160,7 @@ function render_rss_card(array $article, bool $archive = false): string
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS_SIO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">    <style>
         .card-img-container {
             height: 250px;
             overflow: hidden;
@@ -1152,8 +1151,7 @@ function render_rss_card(array $article, bool $archive = false): string
             }
         }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
         // ── Toggle bloc articles ──────────────────────────────────────
         function toggleBloc(id, btn) {

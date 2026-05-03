@@ -71,8 +71,8 @@
     ],
 ];
 
-// Durée du cache en secondes (3600 = 1 heure)
-define('RSS_CACHE_DURATION', 3600);
+// Durée du cache en secondes (3600 = 1 heure et 24H pour l'exam)
+define('RSS_CACHE_DURATION', 86400);
 
 // Dossier cache — doit être accessible en écriture
 define('RSS_CACHE_DIR', __DIR__ . '/../cache/');
@@ -282,6 +282,23 @@ function get_veille_articles(): array
     // ── Trier par date décroissante ──
     usort($tous_articles, fn($a, $b) => $b['timestamp'] - $a['timestamp']);
     $tous_articles = array_values($tous_articles);
+
+    // ── Si aucun article récupéré (pas de connexion ou sources indisponibles) ──
+    if (empty($tous_articles)) {
+        // Utiliser l'ancien cache même s'il est expiré
+        if (file_exists($cache_file)) {
+            $cached = json_decode(file_get_contents($cache_file), true);
+            if ($cached !== null) return $cached;
+        }
+        // Sinon retourner un résultat vide propre sans faire planter la page
+        return [
+            'recents'      => [],
+            'archives'     => [],
+            'total'        => 0,
+            'derniere_maj' => 'Mode hors ligne',
+        ];
+    }
+
 
     // ── Séparer récents / archives ──
     $recents  = array_slice($tous_articles, 0, RSS_MAX_RECENTS);

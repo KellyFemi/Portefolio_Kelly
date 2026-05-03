@@ -10,8 +10,7 @@ $pageTitle = "bts_sio - Portfolio";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS_SIO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <style>
         .card-img-container {
             height: 250px;
@@ -165,8 +164,7 @@ $pageTitle = "bts_sio - Portfolio";
     <?php include('includes/back-to-top.php'); ?>
     <?php include('includes/footer.php'); ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>    <script>
 
     </script>
 </body>
